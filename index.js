@@ -1,23 +1,20 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
 import './style.css';
+import MixedBarChart from './MixedBarChart'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'React'
+      name: 'Recharts Demo'
     };
   }
 
   render() {
     return (
       <div>
-        <Hello name={this.state.name} />
-        <p>
-          Start editing to see some magic happen :)
-        </p>
+        <MixedBarChart />
       </div>
     );
   }
