@@ -1,15 +1,15 @@
 import React, { Fragment, Component } from "react";
 import { CardGroup } from "react-bootstrap";
-import MixedBarChart from './MixedBarChart'
+import RechartCharts from './RechartCharts'
 
 class RechartCard extends Component {
   render() {
     return(
       <Fragment>
         <CardGroup>
-        <MixedBarChart/>
+          <RechartCharts/>
         </CardGroup>
-        </Fragment>
+      </Fragment>
     )
   }
 }
