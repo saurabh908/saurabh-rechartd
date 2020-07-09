@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import './style.css';
-import MixedBarChart from './MixedBarChart'
+
+import RechartCard from './RechartCard'
+
+import { Card, Container, Jumbotron } from "react-bootstrap";
 
 class App extends Component {
   constructor() {
@@ -13,9 +16,13 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <MixedBarChart />
-      </div>
+      <Container>
+      <Jumbotron>
+      <h4>Demo</h4>
+      <RechartCard />
+       </Jumbotron>
+    </Container>
+     
     );
   }
 }

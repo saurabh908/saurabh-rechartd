@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import {
   BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
+import { Card } from "react-bootstrap";
 
 const data = [
   {
@@ -32,7 +33,9 @@ export default class MixedBarChart extends PureComponent {
 
   render() {
     return (
-      <BarChart
+      <div>
+       
+          <BarChart
         width={500}
         height={300}
         data={data}
@@ -49,6 +52,8 @@ export default class MixedBarChart extends PureComponent {
         <Bar dataKey="amt" stackId="a" fill="#82ca9d" />
         <Bar dataKey="uv" fill="#ffc658" />
       </BarChart>
+      </div>
+      
     );
   }
 }
